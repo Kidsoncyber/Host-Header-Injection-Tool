@@ -15,3 +15,17 @@ A simple Python tool to test for Host Header Injection vulnerabilities.
 git clone https://github.com/kidsoncyber/host-header-injector.git
 cd host-header-injector
 pip install -r requirements.txt
+
+## Usage
+
+# Test single URL
+python host.py -u https://example.com
+
+# Test multiple URLs from file
+python host.py -f urls.txt
+
+# Disable SSL verification
+python host.py -u https://example.com --insecure
+
+# Add custom headers
+python host.py -u https://example.com -H "Cookie: session=123" -H "User-Agent: TestAgent"

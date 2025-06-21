@@ -22,7 +22,7 @@ A lightweight Python tool to identify and exploit Host Header Injection vulnerab
 
 ### Quick Setup  
 ```bash
-git clone https://github.com/kidsoncyber/host-header-injector.git
+git clone https://github.com/kidsoncyber/host-header-injection-tool.git
 cd host-header-injector
 pip install -r requirements.txt
 

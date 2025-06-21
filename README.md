@@ -1,16 +1,26 @@
-# Host Header Injection Tester
+# Host Header Injection Tester  
 
-A simple Python tool to test for Host Header Injection vulnerabilities.
+![Python](https://img.shields.io/badge/Python-3.6+-blue?logo=python)  
+![License](https://img.shields.io/badge/License-MIT-green)  
+[![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](CONTRIBUTING.md)  
 
-## Features
+A lightweight Python tool to identify and exploit Host Header Injection vulnerabilities in web applications.
 
-- Tests for reflected Host header values
-- Supports single URL or file input
-- Custom headers support
-- SSL verification toggle
+## Features  
 
-## Installation
+✔ Detects reflected Host header values  
+✔ Supports single URL and bulk file testing  
+✔ Custom headers injection  
+✔ SSL verification toggle  
+✔ Verbose output mode  
 
+## Installation  
+
+### Prerequisites  
+- Python 3.6+  
+- pip package manager  
+
+### Quick Setup  
 ```bash
 git clone https://github.com/kidsoncyber/host-header-injector.git
 cd host-header-injector
@@ -18,14 +28,14 @@ pip install -r requirements.txt
 
 ## Usage
 
+### Basic Commands
+
+```bash
 # Test single URL
 python host.py -u https://example.com
 
-# Test multiple URLs from file
+# Test multiple URLs from file (one per line)
 python host.py -f urls.txt
 
-# Disable SSL verification
-python host.py -u https://example.com --insecure
-
-# Add custom headers
-python host.py -u https://example.com -H "Cookie: session=123" -H "User-Agent: TestAgent"
+# Enable verbose output mode
+python host.py -u https://example.com -v
